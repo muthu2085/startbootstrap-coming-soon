@@ -10859,13 +10859,76 @@ video.bg-video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/bg-mobile-fallback.jpg") #2a5555 no-repeat center center scroll;
+    background: url("../assets/img/bg-mobile-fallback.jpg") #fff no-repeat center center scroll;
     background-size: cover;
   }
   body video {
     display: none;
   }
 }
+
+    @font-face {
+    font-family: 'Brixton Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Bold Oblique'), url('fonts/Brixton Bold Oblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Book Oblique'), url('fonts/Brixton Book Oblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Book'), url('fonts/Brixton Book.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Light Oblique'), url('fonts/Brixton Light Oblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Medium Oblique'), url('fonts/Brixton Medium Oblique.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Light'), url('fonts/Brixton Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Medium'), url('fonts/Brixton Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Brixton Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brixton Bold'), url('fonts/Brixton Bold.woff') format('woff');
+    }
 .masthead {
   position: relative;
   overflow: hidden;
@@ -10883,7 +10946,7 @@ video.bg-video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #fff;
 }
 .masthead .masthead-content {
   position: relative;
@@ -10893,6 +10956,9 @@ video.bg-video {
 }
 .masthead .masthead-content h1, .masthead .masthead-content .h1 {
   font-size: 2.5rem;
+  font-family:'Brixton Light';
+  letter-spacing:4px;
+  font-style: normal;
 }
 .masthead .masthead-content p {
   font-size: 1.2rem;
@@ -10914,7 +10980,13 @@ video.bg-video {
   padding: calc(1rem + 2px);
 }
 
+.logo {
+  width: 420px;
+  margin-left: -16px;
+}
+
 @media (min-width: 992px) {
+
   .masthead {
     height: 100%;
     width: 75vw;
@@ -10965,4 +11037,9 @@ video.bg-video {
     right: 2.5rem;
     width: auto;
   }
+}
+@media (max-width: 768px) {
+  .logo {
+  width: 280px;
+}
 }
